@@ -1,0 +1,100 @@
+<style>
+    div#div_navigate_post{ display:none; }
+</style>
+        <!-- container_top -->
+<div id="div_img_main2"  class="cover" style="" valign="bottom">
+    <div id="div_img_layer">
+        <h1>ソフトウェアライブラリ <br />
+            product-1 について。
+        </h1>
+    </div>
+</div>
+<div class="container" id="id_main_conte">
+
+<div class="row conte" id="id_row_service" style="margin-top:10px;">
+    <div class="col-sm-12" style="text-align:center;">
+    <h2 class="h4_td_title">ライブラリ</h2>
+    <hr class="hr_ex1"/>
+    </div>
+</div>
+<div class="row conte" style="">
+    <div class="col-sm-4" style="text-align:center ;">
+     <img class="img_kao" src="<%- config.root %>images/rep1.png" style="margin : 10px;">
+    </div>
+    <div class="col-sm-8">
+    <h3>ライブラリ-A</h3>
+    <p>説明の記入１<br>
+        説明の記入2
+    </p>
+    </div>
+</div>
+<div class="row conte" style="">
+    <div class="col-sm-4" style="text-align:center ;">
+     <img class="img_kao" src="<%- config.root %>images/rep1.png" style="margin : 10px;">
+    </div>
+    <div class="col-sm-8">
+    <h3>ライブラリ-B</h3>
+    <p>説明の記入１<br>
+        説明の記入2
+    </p>
+    </div>
+</div>
+
+<!-- -->
+<div id="id_row_sample" class="row conte_b" style="margin-top:10px;">
+    <div class="col-sm-12" style="text-align:center;">
+    <h3 class="h3_row_title">組織 / メンバー</h3>
+    <hr class="hr_wh"/>
+    <div class="flexbox">
+        <div class="flexbox_div">
+          <div class="div_box_image" style="">
+           <img class="img_kao" src="<%- config.root %>images/men2.png" style="  ">
+          </div>
+          <p class="box-p-user">開発部<br />Aさん </p>
+          <p >
+          コメント１２３<br />
+          コメント１２３<br />
+          コメント１２３<br />
+          コメント１２３<br />
+          </p>
+        </div>
+        <div class="flexbox_div">
+          <div class="div_box_image" style="">
+           <img class="img_kao" src="<%- config.root %>images/men2.png" style="">
+          </div>
+          <p class="box-p-user">開発部<br />Bさん </p>
+          <p >
+          コメント１２３<br />
+          コメント１２３<br />
+          コメント１２３<br />
+          コメント１２３<br />
+          </p>
+        </div>
+        <div class="flexbox_div">
+          <div class="div_box_image" style="">
+           <img class="img_kao" src="<%- config.root %>images/men2.png" style="">
+          </div>
+          <p class="box-p-user">開発部<br />Cさん </p>
+          <p >
+          コメント１２３<br />
+          コメント１２３<br />
+          コメント１２３<br />
+          コメント１２３<br />
+          </p>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="container" style="">
+        <div class="row conte" style="margin-top:10px;">
+          <div class="col-sm-12">
+            <div id="div_news">
+            <h2 class="h4_td_title" >新着の投稿</h2>
+            <%- partial('_partial/archive', {pagination: 2, index: true}) %>
+            </div>
+          </div>
+        </div>
+</div>
+
+</div>
+
