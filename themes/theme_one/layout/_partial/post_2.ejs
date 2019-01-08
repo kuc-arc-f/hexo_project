@@ -1,8 +1,20 @@
 
 <div class="div_news_rows" style="width:100%;">
-		<span class="glyphicon glyphicon-circle-arrow-right" style="font-size: 28px; float :left;"></span>
-		<h3 class="">&nbsp;<a  href="<%- config.root %><%- post.path %>"><%= post.title %></a>
-		</h3>
+		<ul class="ul_time_box">
+			<li class="li_time_box"><span class="glyphicon glyphicon-home" style="font-size: 16px; float :left;"></span></li>
+			<li class="li_time_box"><p class="p_time_box">ホーム > </p></li>
+			<li class="li_time_box"><span class="glyphicon glyphicon-folder-close" style="font-size: 16px; float :left;"></span></li>
+			<li class="li_time_box">
+				<p class="p_time_box">
+					<%- partial('post/category') %>	
+				 <!-- <a href="http://localhost/wp2/category/news/" rel="category tag">news</a> -->
+				</p>
+			</li>		
+			<li class="li_time_box"><p class="p_time_box"> > <%= post.title %> </p></li>
+		</ul>
+
+		<h1 class="">&nbsp;<a  href="<%- config.root %><%- post.path %>"><%= post.title %></a>
+		</h1>
 
 		<div style="width:100%;">
 				<ul class="ul_time_box">
@@ -12,8 +24,6 @@
 							<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
 					  </p>
 					</li>
-					<%- partial('post/category') %>
-
 				</ul>
 		</div>
 		<div class="entry-content">
